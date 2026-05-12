@@ -9,7 +9,7 @@ init python:
 
 label start:
 
-    pause 2.0
+    pause 3.0
 
     scene home_bedroom with dissolve 
 
@@ -23,6 +23,7 @@ label start:
 
     pause 0.5
     p"I created a new Ren'Py game."
+    p"blahblah"
     b "I learnt how to use pause and transitions"
 
     show Penny:

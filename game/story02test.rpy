@@ -1,0 +1,7 @@
+label start:
+
+
+
+
+
+    return

@@ -23,7 +23,7 @@ label start:
 
     pause 0.5
     p"I created a new Ren'Py game."
-    p"blahblah"
+    p"blahblahblah"
     b "I learnt how to use pause and transitions"
 
     show Penny:

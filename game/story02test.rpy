@@ -1,7 +1,0 @@
-label start:
-
-
-
-
-
-    return

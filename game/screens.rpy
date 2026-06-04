@@ -995,6 +995,7 @@ screen help():
 
                 textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+                textbutton _("Tutorial") action SetScreenVariable("device", "tutorial")
 
                 if GamepadExists():
                     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
@@ -1005,6 +1006,8 @@ screen help():
                 use mouse_help
             elif device == "gamepad":
                 use gamepad_help
+            elif device == "tutorial":
+                use tutorial_help
 
 
 screen keyboard_help():
@@ -1109,6 +1112,11 @@ screen gamepad_help():
 
     textbutton _("Calibrate") action GamepadCalibrate()
 
+screen tutorial_help():
+
+    hbox:
+        label _("Welcome")
+        text _("Welcome to Balance Point. This is a Visual Novel style game where your choices affect the outcome you recieve.")
 
 style help_button is gui_button
 style help_button_text is gui_button_text

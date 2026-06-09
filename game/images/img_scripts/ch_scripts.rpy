@@ -2,6 +2,7 @@
 
 define r = Character("Rocco",what_prefix="\"",what_suffix="\"")
 define u = Character("You",what_prefix="\"",what_suffix="\"")
+define n = Character("Narrator")
 
 default Blake_productivity = 0 
 

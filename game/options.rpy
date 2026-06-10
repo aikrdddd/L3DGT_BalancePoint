@@ -39,7 +39,6 @@ define gui.about = _p("""
 
 define build.name = "Balance Point v1"
 
-
 ## Sounds and music ############################################################
 
 ## These three variables control, among other things, which mixers are shown

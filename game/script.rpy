@@ -34,60 +34,45 @@ label start:
 
     show Rocco speak
     r "!!!! "
-    
-Go with friends for the whole afternoon
-If player chooses "Go with friends for the whole afternoon"
-
-Narration  
-Avoiding tasks 
-
--1 Productivity
-+1 Stress
-
-
-Should Rocco go 
-out or stay in?
-Decline and only focus on work
-If player chooses "Decline and focus only on work"
-
-Narration
-Overworking!
-
-+1 Productivity
-+1 Stress
-
-
-Join friends briefly, then leave 
-early to go do work
-
-
-
-
-If player chooses "Join friends briefly, then leave to focus on tasks”
-
-Narration:
-Making room for both responsibilities and social activities can help maintain motivation and well being
-
-+1 Productivity
--1 Stress
+    n "It's Monday Morning"
 
     menu:
 
         "Start homework immediately":
-            '+ productivity + stress'
+            n 'Remember to have some time for yourself in the mornigns?'
             $ product += 1
             $ stress += 1
 
         "Check your phone":
-            '+ stress'
+            n 'Putting things off and staring at a screen for your first moments of the day can put your mood down'
             $ product -= 1
             $ stress += 1
 
         "Make a quick day plan":
-            '+ productivity'
+            n 'Creating a simple plan can reduce stress and make large tasks feel more manageable.'
             $ product += -1
 
+    n "It's Monday Lunch"
+    f "C'mon dude, you should let loose and hang with us!"
+    n"Should Rocco go out or stay in?"
 
+    menu:
+
+        "Go with friends for the whole afternoon":
+            n 'Dont avoid your work..'
+            $ product -= 1
+            $ stress += 1
+
+        "Decline and focus only on work":
+            n 'Youre overworking yourself!'
+            $ product += 1
+            $ stress += 1
+
+        "Join friends briefly, then leave early to go do work":
+            n 'Making room for both responsibilities and social activities can help maintain motivation and well being'
+            $ product +=1
+            $ stress -+1
+    
     if product > 2:
         # call custom_screens
         # return
@@ -100,6 +85,7 @@ Making room for both responsibilities and social activities can help maintain mo
 
     n "Game over!"
     n "Thanks for playing"
+
     
 
 

@@ -1,12 +1,12 @@
-
+# scripts that define my speakers
 
 define r = Character("Rocco",what_prefix="\"",what_suffix="\"")
-define u = Character("You",what_prefix="\"",what_suffix="\"")
+define f = Character("Friend",what_prefix="\"",what_suffix="\"")
 define n = Character("Narrator")
 
 default Blake_productivity = 0 
 
-# Sprite 1 Images
+# scripts that define my images for 'Rocco'
 
 image Rocco = "images/CHS/sp1/neutral.png"
 image Rocco cry = "images/CHS/sp1/cry.png"

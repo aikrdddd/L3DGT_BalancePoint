@@ -25,25 +25,30 @@ label start:
     $ stress = 0
     
     scene bedroom with dissolve
-    pause 0.5
+    pause 0.1
 
     show Rocco:
         zoom 0.16 xalign 0.3 yalign 0.1
-    with pixellate
-    pause 0.5
+    with fade
+    pause 0.1
+    n "It's Monday Morning"
 
     show Rocco speak
     r "!!!! "
-    n "It's Monday Morning"
+
+    show Rocco
+    pause 0.1
 
     menu:
 
         "Start homework immediately":
-            n 'Remember to have some time for yourself in the mornigns?'
+            n 'Remember to have some time for yourself in the mornings!'
             $ product += 1
             $ stress += 1
 
         "Check your phone":
+            show Rocco cry
+            with fade
             n 'Putting things off and staring at a screen for your first moments of the day can put your mood down'
             $ product -= 1
             $ stress += 1
@@ -59,11 +64,13 @@ label start:
     menu:
 
         "Go with friends for the whole afternoon":
+            show Rocco cry
             n 'Dont avoid your work..'
             $ product -= 1
             $ stress += 1
 
         "Decline and focus only on work":
+            show Rocco cry
             n 'Youre overworking yourself!'
             $ product += 1
             $ stress += 1
@@ -80,6 +87,7 @@ label start:
         return
 
     else:
+        show Rocco cry
         n "You weren't very productive.."
         return
 

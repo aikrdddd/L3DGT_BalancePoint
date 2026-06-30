@@ -292,7 +292,7 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
+        xalign 0.8
         yalign 0.5
 
         spacing gui.navigation_spacing
@@ -356,6 +356,7 @@ screen main_menu():
     tag menu
 
     add gui.main_menu_background
+    add "images/bgs/logo.png"
 
     ## This empty frame darkens the main menu.
     frame:

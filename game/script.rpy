@@ -48,8 +48,8 @@ label start:
 
         "Check your phone":
             show Rocco cry
-            with fade
             n 'Putting things off and staring at a screen for your first moments of the day can put your mood down'
+            show Rocco
             $ product -= 1
             $ stress += 1
 
@@ -66,12 +66,14 @@ label start:
         "Go with friends for the whole afternoon":
             show Rocco cry
             n 'Dont avoid your work..'
+            show Rocco
             $ product -= 1
             $ stress += 1
 
         "Decline and focus only on work":
             show Rocco cry
             n 'Youre overworking yourself!'
+            show Rocco
             $ product += 1
             $ stress += 1
 
@@ -89,6 +91,7 @@ label start:
     else:
         show Rocco cry
         n "You weren't very productive.."
+        show Rocco
         return
 
     n "Game over!"

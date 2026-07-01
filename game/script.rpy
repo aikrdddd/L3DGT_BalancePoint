@@ -19,7 +19,6 @@ init python:
 # first scene
 label start:
     
-    # call screen new_main_menu
 
     $ product = 0
     $ stress = 0

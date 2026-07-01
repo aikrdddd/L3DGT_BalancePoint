@@ -1,6 +1,6 @@
 # first ending
 
-label endingtest:
+'''label endingtest:
 
     # screen text_verticalgrid:
     #     hbox:

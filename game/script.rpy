@@ -29,7 +29,7 @@ label start:
     show Rocco:
         zoom 0.16 xalign 0.3 yalign 0.1
     with fade
-    pause 0.1
+
     n "It's Monday Morning"
 
     show Rocco speak
@@ -59,8 +59,11 @@ label start:
             $ product += 1
 
     scene bg town with dissolve
-    show Rocco
     pause 0.1
+
+    show Rocco:
+        zoom 0.16 xalign 0.3 yalign 0.1
+
     n "It's Monday Lunch"
     f "C'mon dude, you should let loose and hang with us!"
     n"Should Rocco go out or stay in?"
@@ -87,8 +90,6 @@ label start:
             $ stress -+ 1
     
     if product > 1:
-        # call custom_screens
-        # return
         n "You were quite productive today"
         return
 

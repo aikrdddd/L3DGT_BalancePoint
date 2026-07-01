@@ -59,6 +59,7 @@ label start:
             $ product += 1
 
     scene bg town with dissolve
+    show Rocco
     pause 0.1
     n "It's Monday Lunch"
     f "C'mon dude, you should let loose and hang with us!"

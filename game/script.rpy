@@ -67,6 +67,10 @@ label start:
 
     n "It's Monday Lunch"
     f "C'mon dude, you should let loose and hang with us!"
+    show Rocco speak
+    r "Let me think about it..."
+    pause 0.1
+    show Rocco
     n"Should Rocco go out or stay in?"
 
     menu:

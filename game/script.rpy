@@ -58,6 +58,8 @@ label start:
             n 'Creating a simple plan can reduce stress and make large tasks feel more manageable.'
             $ product += 1
 
+    scene bg town with dissolve
+    pause 0.1
     n "It's Monday Lunch"
     f "C'mon dude, you should let loose and hang with us!"
     n"Should Rocco go out or stay in?"
@@ -95,6 +97,7 @@ label start:
         show Rocco
         return
 
+        
     n "Game over!"
     n "Thanks for playing"
 

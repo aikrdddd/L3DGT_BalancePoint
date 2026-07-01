@@ -11,3 +11,4 @@ default Blake_productivity = 0
 image Rocco = "images/CHS/Rocco/Rocco_neutral.png"
 image Rocco cry = "images/CHS/Rocco/Rocco_cry.png"
 image Rocco speak = "images/CHS/Rocco/Rocco_speak.png"
+image Rocco smile = "images/CHS/Rocco/Rocco_smile.png"

@@ -2,7 +2,6 @@
 
 init python:
     renpy.music.register_channel("LoNoise","bgs")
-    renpy.music.register_channel("sound2", "sfx",loop=False)
 
 # default show_message = True
 
@@ -55,7 +54,9 @@ label start:
             $ stress += 1
 
         "Make a quick day plan":
+            show Rocco smile
             n 'Creating a simple plan can reduce stress and make large tasks feel more manageable.'
+            show Rocco
             $ product += 1
 
     scene bg town with dissolve
@@ -85,12 +86,16 @@ label start:
             $ stress += 1
 
         "Join friends briefly, then leave early to go do work":
+            show Rocco smile
             n 'Making room for both responsibilities and social activities can help maintain motivation and well being'
+            show Rocco
             $ product += 1
             $ stress -+ 1
     
     if product > 1:
+        show Rocco smile
         n "You were quite productive today"
+        show Rocco
         return
 
     else:

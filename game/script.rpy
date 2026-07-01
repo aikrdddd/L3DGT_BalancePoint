@@ -34,10 +34,12 @@ label start:
 
     show Rocco speak
     r "!!!! "
+    r "I've gotta go to school today. Seems like I still have some time."
 
     show Rocco
     pause 0.1
 
+    n "What should Rocco do?"
     menu:
 
         "Start homework immediately":
@@ -54,7 +56,7 @@ label start:
 
         "Make a quick day plan":
             n 'Creating a simple plan can reduce stress and make large tasks feel more manageable.'
-            $ product += -1
+            $ product += 1
 
     n "It's Monday Lunch"
     f "C'mon dude, you should let loose and hang with us!"
@@ -78,8 +80,8 @@ label start:
 
         "Join friends briefly, then leave early to go do work":
             n 'Making room for both responsibilities and social activities can help maintain motivation and well being'
-            $ product +=1
-            $ stress -+1
+            $ product += 1
+            $ stress -+ 1
     
     if product > 2:
         # call custom_screens

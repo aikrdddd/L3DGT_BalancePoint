@@ -83,7 +83,7 @@ label start:
             $ product += 1
             $ stress -+ 1
     
-    if product > 2:
+    if product > 1:
         # call custom_screens
         # return
         n "You were quite productive today"
